@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: hsla(228, 6%, 66%, 0.05);
+    color: hsl(234, 12%, 34%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+/* Main container */
+
+.main-div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+/* Heading section */
+
+.heading-description-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 2.5rem;
+}
+
+.heading-one,
+.heading-two {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.product-description {
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+    margin-top: 4%;
+    max-width: 35em;
+    text-align: center;
+}
+
+/* Bolded text */
+
+.heading-two,
+.feature-name {
+    font-weight: 600;
+}
+
+/* Feature section */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Font sizes */
+
+.feature-name {
+    font-size: 1.4rem;
+}
+
+.feature-description {
+    color: hsl(229, 6%, 66%);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+/* Features cards layout */
+
+.supervisor-feature,
+.team-builder-feature,
+.karma-feature,
+.calculator-feature {
+    background-image: url(images/icon-supervisor.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 28px right 28px;
+    border-top: 4px solid hsl(180, 62%, 55%);
+    border-radius: 5px;
+    box-shadow: 0 1.3rem 1.5rem 0 rgb(216 226 236 / 70%);
+    height: 15.333rem;
+    margin: 0 9% 7%;
+    padding: 1.866rem;
+}
+
+.supervisor-feature {
+    background-image: url(images/icon-supervisor.svg);
+    border-top: 4px solid hsl(180, 62%, 55%);
+    margin-top: 18%;
+}
+
+.team-builder-feature {
+    background-image: url(images/icon-team-builder.svg);
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma-feature {
+    background-image: url(images/icon-karma.svg);
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator-feature {
+    background-image: url(images/icon-calculator.svg);
+    border-top: 4px solid hsl(212, 86%, 64%);
+
+}
+
+/* Media queries */
+
+@media screen and (min-width: 100px) and (max-width: 363px) {
+    .main-div {
+        margin: 15% 0;
+    }
+
+    .heading-description-div {
+        margin: 0 0.666rem;
+        max-width: 20rem;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .product-description {
+        max-width: 26.66rem;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .main-div {
+        margin-bottom: 6.6666rem;
+    }
+
+    .features {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .feature-description {
+        font-size: 0.866rem;
+    }
+
+    .heading-one,
+    .heading-two {
+        font-size: 2.4rem;
+    }
+
+    .product-description {
+        margin-bottom: 4rem;
+    }
+
+    .middle-feature-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1.333rem;
+    }
+
+    .supervisor-feature,
+    .team-builder-feature,
+    .karma-feature,
+    .calculator-feature {
+        margin: 0;
+        width: 23.066rem;
+        height: 16.666rem;
+    }
+
+    .team-builder-feature {
+        margin-bottom: 2rem;
+
+    }
+
+}
